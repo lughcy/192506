@@ -1,86 +1,87 @@
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        Scanner s = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner consola = new Scanner(System.in);
 
-        System.out.println("Nombre vendedor:");
-        String a = s.nextLine();
+        System.out.print("Nombre vendedor: ");
+        String nombreVendedor = consola.nextLine();
 
-        System.out.println("Cantidad de productos vendidos:");
-        int p = s.nextInt();
+        System.out.print("Cantidad de productos vendidos:");
+        int productosVendidos = consola.nextInt();
 
-        System.out.println("Ingrese valor producto 1:");
-        double x1 = s.nextDouble();
+        System.out.print("Ingrese valor producto 1:");
+        int productoUno = consola.nextInt();
 
-        System.out.println("Ingrese valor producto 2:");
-        double x2 = s.nextDouble();
+        System.out.print("Ingrese valor producto 2:");
+        int productoDos = consola.nextInt();
 
-        System.out.println("Ingrese valor producto 3:");
-        double x3 = s.nextDouble();
+        System.out.print("Ingrese valor producto 3:");
+        int productoTres = consola.nextInt();
 
-        System.out.println("Ingrese valor producto 4:");
-        double x4 = s.nextDouble();
+        System.out.print("Ingrese valor producto 4:");
+        int productoCuatro = consola.nextInt();
 
-        System.out.println("Ingrese valor producto 5:");
-        double x5 = s.nextDouble();
+        System.out.print("Ingrese valor producto 5:");
+        int productoCinco = consola.nextInt();
 
-        System.out.println("Ingrese valor producto 6:");
-        double x6 = s.nextDouble();
+        System.out.print("Ingrese valor producto 6:");
+        int productoSeis = consola.nextInt();
 
-        System.out.println("Ingrese valor producto 7:");
-        double x7 = s.nextDouble();
+        System.out.print("Ingrese valor producto 7:");
+        int productoSiete = consola.nextInt();
 
-        double s1 = 0;
+        double sumaUno = 0;
 
-        if (x1 >= 100000) {
-            s1 = s1 + (x1 * 0.10);
+        if (productoUno >= 100000) {
+            sumaUno = sumaUno + (productoUno * 0.10);
         } else {
-            s1 = s1 + (x1 * 0.05);
+            sumaUno = sumaUno + (productoUno * 0.05);
         }
 
-        if (x2 >= 100000) {
-            s1 = s1 + (x2 * 0.10);
+        if (productoDos >= 100000) {
+            sumaUno = sumaUno + (productoDos * 0.10);
         } else {
-            s1 = s1 + (x2 * 0.05);
+            sumaUno = sumaUno + (productoDos * 0.05);
         }
 
-        if (x3 >= 100000) {
-            s1 = s1 + (x3 * 0.10);
+        if (productoTres >= 100000) {
+            sumaUno = sumaUno + (productoTres * 0.10);
         } else {
-            s1 = s1 + (x3 * 0.05);
+            sumaUno = sumaUno + (productoTres * 0.05);
         }
 
-        if (x4 >= 100000) {
-            s1 = s1 + (x4 * 0.10);
+        if (productoCuatro >= 100000) {
+            sumaUno = sumaUno + (productoCuatro * 0.10);
         } else {
-            s1 = s1 + (x4 * 0.05);
+            sumaUno = sumaUno + (productoCuatro * 0.05);
         }
 
-        if (x5 >= 100000) {
-            s1 = s1 + (x5 * 0.10);
+        if (productoCinco >= 100000) {
+            sumaUno = sumaUno + (productoCinco * 0.10);
         } else {
-            s1 = s1 + (x5 * 0.05);
+            sumaUno = sumaUno + (productoCinco * 0.05);
         }
 
-        if (x6 >= 100000) {
-            s1 = s1 + (x6 * 0.10);
+        if (productoSeis >= 100000) {
+            sumaUno = sumaUno + (productoSeis * 0.10);
         } else {
-            s1 = s1 + (x6 * 0.05);
+            sumaUno = sumaUno + (productoSeis * 0.05);
         }
 
-        if (x7 >= 100000) {
-            s1 = s1 + (x7 * 0.10);
+        if (productoSiete >= 100000) {
+            sumaUno = sumaUno + (productoSiete * 0.10);
         } else {
-            s1 = s1 + (x7 * 0.05);
+            sumaUno = sumaUno + (productoSiete * 0.05);
         }
 
-        double tt = x1 + x2 + x3 + x4 + x5 + x6 + x7;
-        double ss = (double) (s1 + 1000000);
+        double totalVentas = productoUno + productoDos + productoTres + productoCuatro + productoCinco + productoSeis + productoSiete;
+        double salarioTotal = (sumaUno + 1000000);
 
-        System.out.println("Vendedor: " + a);
-        System.out.println("Total ventas: " + (int)tt);
-        System.out.println("Comisiones: " + (int)s1);
-        System.out.println("Salario total: " + (int)ss);
+        System.out.println("\tVendedor: " + nombreVendedor);
+        System.out.println("\tTotal ventas: " + totalVentas);
+        System.out.println("\tComisiones: " + sumaUno);
+        System.out.println("\tCantidad de productos vendidos: " + productosVendidos);
+        System.out.println("\tSalario total: " + salarioTotal);
     }
 }
